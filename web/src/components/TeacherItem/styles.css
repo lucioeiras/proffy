@@ -70,7 +70,7 @@
   font-size: 1.6rem;
 }
 
-.teacher-item footer button {
+.teacher-item footer a {
   width: 20rem;
   height: 5.6rem;
 
@@ -85,12 +85,13 @@
 
   color: var(--color-button-text);
   font: 700 1.6rem Archivo;
-
+  text-decoration: none;
+  
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
-.teacher-item footer button:hover {
+.teacher-item footer a:hover {
   background-color: var(--color-secundary-dark);
 }
 
