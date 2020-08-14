@@ -6,6 +6,7 @@ import ConnectionsController from './controllers/Connections'
 const routes = Router()
 
 routes.get('/classes', ClassesController.index)
+routes.get('/classes/filtereds', ClassesController.show)
 routes.post('/classes', ClassesController.create)
 
 routes.get('/connections', ConnectionsController.index)

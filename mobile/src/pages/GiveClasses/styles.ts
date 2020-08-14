@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
   okButtonText: {
     color: '#FFF',
     fontSize: 16,
-    fontFamily: 'Archivo_700Bold'
+    fontFamily: 'Archivo_700Bold',
   },
-});
+})
 
-export default styles;
+export default styles

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   topBar: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
 
   header: {
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
     maxWidth: 160,
     marginVertical: 40,
   },
-});
+})
 
-export default styles;
+export default styles

@@ -5,7 +5,7 @@ import Landing from './pages/Landing'
 import TeacherList from './pages/TeacherList'
 import TeacherForm from './pages/TeacherForm'
 
-export default function Routes() {
+const Routes: React.FC = () => {
   return (
     <BrowserRouter>
       <Route path="/" exact component={Landing} />
@@ -14,3 +14,5 @@ export default function Routes() {
     </BrowserRouter>
   )
 }
+
+export default Routes

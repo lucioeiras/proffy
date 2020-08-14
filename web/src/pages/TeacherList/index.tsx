@@ -9,7 +9,7 @@ import api from '../../services/api'
 
 import './styles.css'
 
-export default function TeacherList() {
+const TeacherList: React.FC = () => {
   const [subject, setSubject] = useState('')
   const [week_day, setWeekDay] = useState(0)
   const [time, setTime] = useState('')
@@ -24,7 +24,7 @@ export default function TeacherList() {
         subject,
         week_day,
         time,
-      }
+      },
     })
 
     setTeachers(data)
@@ -34,11 +34,13 @@ export default function TeacherList() {
     <div id="page-teacher-list" className="container">
       <PageHeader title="Estes são os proffys disponíveis.">
         <form id="search-teachers" onSubmit={searchTeachers}>
-          <Select 
-            name="subject" 
-            label="Matéria" 
+          <Select
+            name="subject"
+            label="Matéria"
             value={subject}
-            onChange={e => { setSubject(e.target.value) }}
+            onChange={e => {
+              setSubject(e.target.value)
+            }}
             options={[
               { value: 'Artes', label: 'Artes' },
               { value: 'Portugues', label: 'Portugues' },
@@ -50,11 +52,13 @@ export default function TeacherList() {
             ]}
           />
 
-          <Select 
-            name="week_day" 
-            label="Dia da semana" 
+          <Select
+            name="week_day"
+            label="Dia da semana"
             value={week_day}
-            onChange={e => { setWeekDay(Number(e.target.value)) }}
+            onChange={e => {
+              setWeekDay(Number(e.target.value))
+            }}
             options={[
               { value: '0', label: 'Domingo' },
               { value: '1', label: 'Segunda-feira' },
@@ -66,12 +70,14 @@ export default function TeacherList() {
             ]}
           />
 
-          <Input 
-            type="time"  
-            name="time" 
-            label="Hora" 
+          <Input
+            type="time"
+            name="time"
+            label="Hora"
             value={time}
-            onChange={e => { setTime(e.target.value) }}
+            onChange={e => {
+              setTime(e.target.value)
+            }}
           />
 
           <button type="submit">Buscar</button>
@@ -79,8 +85,12 @@ export default function TeacherList() {
       </PageHeader>
 
       <main>
-        {teachers.map((teacher: Teacher) => <TeacherItem key={teacher.id} teacher={teacher} />)}
+        {teachers.map((teacher: Teacher) => (
+          <TeacherItem key={teacher.id} teacher={teacher} />
+        ))}
       </main>
     </div>
   )
 }
+
+export default TeacherList

@@ -30,10 +30,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
   return (
     <article className="teacher-item">
       <header>
-        <img 
-          src={teacher.avatar}
-          alt={teacher.name}
-        />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
           <strong>{teacher.name}</strong>
           <span>{teacher.subject}</span>
@@ -45,15 +42,19 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
       <footer>
         <p>
           Preço/hora
-          <strong>R$ {teacher.cost}</strong>
+          <strong>
+            R$
+            {teacher.cost}
+          </strong>
         </p>
-        <a 
+        <a
           target="_blank"
-          href={`https://wa.me/${teacher.whatsapp}`} 
+          rel="noreferrer"
+          href={`https://wa.me/${teacher.whatsapp}`}
           type="button"
           onClick={createNewConnection}
         >
-          <img src={whatsappIcon} alt="Whatsapp"/>
+          <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
         </a>
       </footer>

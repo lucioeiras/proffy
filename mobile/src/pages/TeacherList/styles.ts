@@ -1,9 +1,9 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f7'
+    backgroundColor: '#f0f0f7',
   },
 
   teacherList: {
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 
   label: {
     color: '#d4c2ff',
-    fontFamily: 'Poppins_400Regular'
+    fontFamily: 'Poppins_400Regular',
   },
 
   input: {
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
 
   inputBlock: {
-    width: '48%'
+    width: '48%',
   },
 
   submitButton: {
@@ -52,6 +52,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Archivo_700Bold',
     fontSize: 16,
   },
-});
+})
 
-export default styles;
+export default styles

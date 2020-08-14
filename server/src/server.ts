@@ -9,4 +9,6 @@ app.use(cors())
 app.use(express.json())
 app.use(routes)
 
-app.listen(3333, () => { console.log('👌  Ta funcionando') })
+app.listen(3333, () => {
+  console.log('👌  Ta funcionando')
+})

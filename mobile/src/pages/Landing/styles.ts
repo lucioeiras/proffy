@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 40,
   },
-  
+
   banner: {
     width: '100%',
     resizeMode: 'contain',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   buttonPrimary: {
     backgroundColor: '#9871f5',
   },
-  
+
   buttonSecondary: {
     backgroundColor: '#04d361',
   },
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
     maxWidth: 140,
     marginTop: 40,
   },
-});
+})
 
-export default styles;
+export default styles

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_400Regular',
     fontSize: 14,
     lineHeight: 24,
-    color: '#646180'
+    color: '#646180',
   },
 
   footer: {
@@ -103,6 +103,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 16,
   },
-});
+})
 
-export default styles;
+export default styles
