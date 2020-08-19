@@ -12,13 +12,6 @@
 
 <br>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/67290471/90583336-419f4880-e1a6-11ea-9c04-e39cc57befd7.png" alt="Web" heigth="64%" width="64%"/>
-  <img src="https://user-images.githubusercontent.com/67290471/90583477-9d69d180-e1a6-11ea-8fe9-76c3193051d9.png" alt="Mobile" heigth="20.2%" width="20.2%"/>
-</p>
-
-<br>
-
 <h2 id="techs">🚀 Technologies </h1>
 
 This project was developed at the [Rocketseat](https://rocketseat.com.br/) "Next Level Week" event with the following technologies:
@@ -38,7 +31,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) + [Nod
 $ git clone https://github.com/lucioeiras/proffy
 
 # Go into the repository
-$ cd proffy/server
+$ cd proffy/mobile
 
 # Install dependencies
 $ yarn 
@@ -49,7 +42,6 @@ $ yarn knex:migrate
 # Run the app
 $ yarn start
 ```
-
 
 <h2 id="license">:memo: License</h2>
 
