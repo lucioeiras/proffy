@@ -31,7 +31,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) + [Nod
 $ git clone https://github.com/lucioeiras/proffy
 
 # Go into the repository
-$ cd proffy/mobile
+$ cd proffy/server
 
 # Install dependencies
 $ yarn 
