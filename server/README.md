@@ -18,8 +18,8 @@ This project was developed at the [Rocketseat](https://rocketseat.com.br/) "Next
 
 -  [Node.js](https://nodejs.org/)
 -  [Express](https://expressjs.com/pt-br/)
--  [PostgreSQL](https://reactjs.org/)
--  [Knex](https://reactnative.dev/)
+-  [PostgreSQL](https://www.postgresql.org/)
+-  [Knex](http://knexjs.org/)
 -  [Date-Fns](https://date-fns.org/)
 
 <h2 id="use">ℹ How To Use </h1>
