@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, ScrollView } from 'react-native'
+import { View, ScrollView, Text } from 'react-native'
 import AsyncStorage from '@react-native-community/async-storage'
 import { useFocusEffect } from '@react-navigation/native'
 
@@ -41,6 +41,8 @@ const Favorites: React.FC = () => {
         {favorites.map((teacher: Teacher) => {
           return <TeacherItem key={teacher.id} teacher={teacher} favorited />
         })}
+
+        <Text style={styles.endText}>Estes são todos os resultados</Text>
       </ScrollView>
     </View>
   )

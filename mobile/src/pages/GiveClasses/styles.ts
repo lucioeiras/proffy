@@ -3,8 +3,10 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#8257e5',
     justifyContent: 'center',
+
+    backgroundColor: '#8257e5',
+
     padding: 40,
   },
 
@@ -14,35 +16,60 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'Archivo_700Bold',
     color: '#FFF',
+    fontFamily: 'Archivo_700Bold',
     fontSize: 32,
     lineHeight: 37,
+
     maxWidth: 180,
   },
 
   description: {
-    marginTop: 24,
+    maxWidth: 240,
+
     color: '#d4c2ff',
+    fontFamily: 'Poppins_400Regular',
     fontSize: 16,
     lineHeight: 26,
+
+    marginTop: 24,
+  },
+
+  boostContainer: {
+    width: 151,
+
+    flexDirection: 'row',
+    justifyContent: 'center',
+
+    paddingLeft: 16,
+    marginTop: 72,
+  },
+
+  boostText: {
+    color: '#24EF7F',
     fontFamily: 'Poppins_400Regular',
-    maxWidth: 240,
+    fontSize: 12,
+    lineHeight: 20,
+
+    marginLeft: 24,
   },
 
   okButton: {
-    marginVertical: 40,
-    backgroundColor: '#04d361',
     height: 58,
+
     alignItems: 'center',
     justifyContent: 'center',
+
     borderRadius: 8,
+    backgroundColor: '#04d361',
+
+    marginVertical: 40,
   },
 
   okButtonText: {
     color: '#FFF',
-    fontSize: 16,
     fontFamily: 'Archivo_700Bold',
+    fontSize: 16,
   },
 })
 

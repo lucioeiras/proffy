@@ -49,9 +49,14 @@ const styles = StyleSheet.create({
   },
 
   footer: {
-    color: '#fafafc',
-    padding: 24,
     alignItems: 'center',
+
+    borderTopWidth: 1,
+    borderTopColor: '#E6E6F0',
+
+    backgroundColor: '#FAFAFC',
+
+    padding: 24,
     marginTop: 24,
   },
 

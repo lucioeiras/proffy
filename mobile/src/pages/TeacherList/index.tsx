@@ -74,7 +74,7 @@ const TeacherList: React.FC = () => {
         title="Proffys disponíveis"
         headerRight={
           <BorderlessButton onPress={handleToggleFiltersVisible}>
-            <Feather name="filter" size={25} color="#FfF" />
+            <Feather name="filter" size={25} color="#FFF" />
           </BorderlessButton>
         }
       >
@@ -137,6 +137,8 @@ const TeacherList: React.FC = () => {
             favorited={favorites.includes(teacher.id)}
           />
         ))}
+
+        <Text style={styles.endText}>Estes são todos os resultados</Text>
       </ScrollView>
     </View>
   )

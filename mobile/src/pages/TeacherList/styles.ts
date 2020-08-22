@@ -11,6 +11,8 @@ const styles = StyleSheet.create({
   },
 
   searchForm: {
+    paddingHorizontal: 40,
+    paddingBottom: 40,
     marginBottom: 24,
   },
 
@@ -21,9 +23,11 @@ const styles = StyleSheet.create({
 
   input: {
     height: 54,
-    backgroundColor: '#fff',
-    borderRadius: 8,
     justifyContent: 'center',
+
+    borderRadius: 8,
+    backgroundColor: '#fff',
+
     paddingHorizontal: 16,
     marginTop: 4,
     marginBottom: 16,
@@ -39,18 +43,30 @@ const styles = StyleSheet.create({
   },
 
   submitButton: {
-    backgroundColor: '#04d361',
     height: 56,
+
     flexDirection: 'row',
-    borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
+
+    borderRadius: 8,
+    backgroundColor: '#04d361',
   },
 
   submitButtonText: {
     color: '#fff',
     fontFamily: 'Archivo_700Bold',
     fontSize: 16,
+  },
+
+  endText: {
+    color: '#6A6180',
+    fontFamily: 'Poppins_400Regular',
+    fontSize: 12,
+    lineHeight: 22,
+    textAlign: 'center',
+
+    marginVertical: 16,
   },
 })
 

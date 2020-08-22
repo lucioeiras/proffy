@@ -3,9 +3,17 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#8257e5',
+    flexDirection: 'column',
     justifyContent: 'center',
-    padding: 40,
+
+    backgroundColor: '#F0F0F7',
+  },
+
+  bannerContainer: {
+    flex: 1,
+    justifyContent: 'center',
+
+    backgroundColor: '#8257E5',
   },
 
   banner: {
@@ -13,12 +21,17 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 
+  contentContainer: {
+    flex: 1,
+
+    padding: 40,
+  },
+
   title: {
+    color: '#6A6180',
     fontFamily: 'Poppins_400Regular',
-    color: '#FFF',
     fontSize: 20,
     lineHeight: 30,
-    marginTop: 80,
   },
 
   titleBold: {
@@ -32,12 +45,15 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    height: 150,
+    height: 158,
     width: '48%',
-    backgroundColor: '#333',
-    borderRadius: 8,
-    padding: 24,
+
     justifyContent: 'space-between',
+
+    borderRadius: 8,
+    backgroundColor: '#333',
+
+    padding: 24,
   },
 
   buttonText: {
@@ -47,19 +63,21 @@ const styles = StyleSheet.create({
   },
 
   buttonPrimary: {
-    backgroundColor: '#9871f5',
+    backgroundColor: '#8257E5',
   },
 
   buttonSecondary: {
-    backgroundColor: '#04d361',
+    backgroundColor: '#04D361',
   },
 
   totalConnections: {
+    maxWidth: 140,
+
+    color: '#9C98A6',
     fontFamily: 'Poppins_400Regular',
-    color: '#d4c2ff',
     fontSize: 12,
     lineHeight: 20,
-    maxWidth: 140,
+
     marginTop: 40,
   },
 })
