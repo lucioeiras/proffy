@@ -25,6 +25,7 @@ This project was developed at the [Rocketseat](https://rocketseat.com.br/) "Next
 
 -  [React](https://pt-br.reactjs.org/)
 -  [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+-  [styled-components](https://styled-components.com/)
 
 <h2 id="use">ℹ How To Use </h1>
 
@@ -38,7 +39,7 @@ $ git clone https://github.com/lucioeiras/proffy
 $ cd proffy/web
 
 # Install dependencies
-$ yarn 
+$ yarn
 
 # Run the app
 $ yarn start
@@ -50,5 +51,5 @@ This project is under the MIT license. See the [LICENSE](https://github.com/luke
 
 <h1> </h1>
 
-👋 Made by Diego Eiras. 
+👋 Made by Diego Eiras.
 [Get in touch!](https://www.linkedin.com/in/diego-eiras-2005ba19b/)
