@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react'
+import React, { useState, FormEvent, useEffect } from 'react'
 
 import PageHeader from '../../components/PageHeader'
 import TeacherItem, { Teacher } from '../../components/TeacherItem'
@@ -7,7 +7,7 @@ import Select from '../../components/Select'
 
 import api from '../../services/api'
 
-import './styles.css'
+import { PageTeacherList, SearchTeachers } from './styles'
 
 const TeacherList: React.FC = () => {
   const [subject, setSubject] = useState('')
@@ -19,7 +19,7 @@ const TeacherList: React.FC = () => {
   async function searchTeachers(e: FormEvent) {
     e.preventDefault()
 
-    const { data } = await api.get('classes', {
+    const { data } = await api.get('classes/filtereds', {
       params: {
         subject,
         week_day,
@@ -30,10 +30,16 @@ const TeacherList: React.FC = () => {
     setTeachers(data)
   }
 
+  useEffect(() => {
+    api.get('classes').then(response => {
+      setTeachers(response.data)
+    })
+  }, [])
+
   return (
-    <div id="page-teacher-list" className="container">
+    <PageTeacherList className="container">
       <PageHeader title="Estes são os proffys disponíveis.">
-        <form id="search-teachers" onSubmit={searchTeachers}>
+        <SearchTeachers onSubmit={searchTeachers}>
           <Select
             name="subject"
             label="Matéria"
@@ -81,7 +87,7 @@ const TeacherList: React.FC = () => {
           />
 
           <button type="submit">Buscar</button>
-        </form>
+        </SearchTeachers>
       </PageHeader>
 
       <main>
@@ -89,7 +95,7 @@ const TeacherList: React.FC = () => {
           <TeacherItem key={teacher.id} teacher={teacher} />
         ))}
       </main>
-    </div>
+    </PageTeacherList>
   )
 }
 

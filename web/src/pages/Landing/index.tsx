@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 
 import logoImg from '../../assets/images/logo.svg'
 import landingImg from '../../assets/images/landing.svg'
@@ -10,7 +9,15 @@ import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
 
 import api from '../../services/api'
 
-import './styles.css'
+import {
+  PageLanding,
+  Content,
+  LogoContainer,
+  ButtonsContainer,
+  Button,
+  HeroImage,
+  TotalConnections,
+} from './styles'
 
 const Landing: React.FC = () => {
   const [totalConnections, setTotalConnections] = useState(0)
@@ -22,40 +29,35 @@ const Landing: React.FC = () => {
   }, [totalConnections])
 
   return (
-    <div id="page-landing">
-      <div id="page-landing-content" className="container">
-        <div className="logo-container">
+    <PageLanding>
+      <Content>
+        <LogoContainer>
           <img src={logoImg} alt="Proffy" />
           <h2>Sua plataforma de estudos online.</h2>
-        </div>
+        </LogoContainer>
 
-        <img
-          src={landingImg}
-          alt="Platorma de estudos"
-          className="hero-image"
-        />
+        <HeroImage src={landingImg} alt="Platorma de estudos" />
 
-        <div className="buttons-container">
-          <Link to="study" className="study">
+        <ButtonsContainer>
+          <Button to="study" primary>
             <img src={studyIcon} alt="Estudar" />
             Estudar
-          </Link>
+          </Button>
 
-          <Link to="give-classes" className="give-classes">
+          <Button to="give-classes" className="give-classes">
             <img src={giveClassesIcon} alt="Dar aulas" />
             Dar aulas
-          </Link>
-        </div>
+          </Button>
+        </ButtonsContainer>
 
-        <span className="total-connections">
+        <TotalConnections>
           Total de
           {totalConnections}
           conexões já realizadas
-{' '}
           <img src={purpleHeartIcon} alt="Coração roxo" />
-        </span>
-      </div>
-    </div>
+        </TotalConnections>
+      </Content>
+    </PageLanding>
   )
 }
 
